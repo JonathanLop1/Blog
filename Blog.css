@@ -1,0 +1,172 @@
+*{
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .5s ease-in-out;
+}
+header{
+    background-image: url('./Fondos/5073414.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px 10px 100px;
+}
+main{
+    height: auto;
+    width: auto;
+    background-image: url('./Fondos/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+p{
+    font-size: large;
+}
+h1{
+    font-size: xx-large;
+    box-shadow: 0px 5px 1px 0px #0026fc;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.personal{
+    box-shadow: 10px 10px 10px 10px #0026fc;
+    border-radius: 10px;
+}
+.padding{
+    display: grid;
+    justify-items: center;
+    padding: 50px;
+}
+.contenido{
+    white-space: initial;
+    width: 500px;
+    padding: 30px;
+}
+.cuadro{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+.carrusel{
+    display: grid;
+    gap: 40px;
+    padding: 10px;
+}
+.image1,
+.image3,
+.image5{
+    animation-duration: 5s;
+    animation-name: carrusel;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes carrusel{
+    from {
+        margin-left: 0%;
+}
+    to {
+        margin-left: -300%;
+}
+}
+.image2,
+.image4{
+    animation-duration: 5s;
+    animation-name: carrusel;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes carrusel{
+    from {
+        margin-left: 0%;
+}
+
+    to {
+        margin-left: -300%;
+}
+}
+.uno{
+    width: 250px;
+    height: 150px;
+}
+#principal{
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+    margin: 50px;
+}
+.hov{
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 5px #ff000077;
+}
+.hov:hover{
+    opacity: 1;
+    transform: scale(1.3);
+    box-shadow: 5px 5px 30px 5px #ff0000;
+}
+li{
+    box-shadow: 0px 5px 1px 0px #0026fc;
+}
+#experiencias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.exp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+    gap: 100px;
+}
+.dos{
+    opacity: 0.09;
+    margin: 50px;
+}
+.dos:hover{
+    opacity: 1;
+    transform: scale(1.4);
+}
+.viaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    box-shadow: 10px 10px 10px 10px #0026fc;
+    border-radius: 10px;
+}
+.doble{
+    display: flex;
+}
+#pie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('./Fondos/5073414.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px 100px 0px 100px;
+}
+.redes{
+    display: flex;
+    gap: 30px;
+}
+.tres{
+    width: 50px;
+    height: 50px;
+}
+.tres:hover{
+    transform: translatey(-15px) translatex(-15px) scale(1.2);
+}
